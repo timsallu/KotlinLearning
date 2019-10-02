@@ -2,6 +2,8 @@ package com.tim.kotlinlearning.Activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.tim.kotlinlearning.Constans
+import com.tim.kotlinlearning.Constans.EditTextValue
 import com.tim.kotlinlearning.R
 import kotlinx.android.synthetic.main.activity_main2.*
 
@@ -14,11 +16,11 @@ class Main2Activity : AppCompatActivity() {
         val bundle:Bundle? = intent.extras
 
         bundle?.let {
-            bundle.getString("ettxt")
+            bundle.getString(EditTextValue)
         }
 
 
-       val value: String= intent.extras.getString("ettxt")
+       val value: String= intent.extras.getString(Constans.EditTextValue)
 
         textView.text=value
 

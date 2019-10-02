@@ -9,6 +9,7 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.tim.kotlinlearning.Constans.EditTextValue
 import com.tim.kotlinlearning.R
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -28,7 +29,8 @@ class MainActivity : AppCompatActivity() {
 
             val etText:String? = ethelloworld.text.toString()
             val intent = Intent(applicationContext, Main2Activity::class.java)
-            intent.putExtra("ettxt",etText)
+
+            intent.putExtra(EditTextValue,etText)
             startActivity(intent)
 
         }
